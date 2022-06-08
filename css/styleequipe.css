@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  /*background: #444;*/
+}
+
+main {
+  padding: 0 0.5rem;
+  height: 100vh;
+  margin-bottom:100px ;
+}
+
+
+.image--gallery {
+  width: 70%;  /* Largeur de l'image principal*/
+  height: 36rem;/*Hauteur de l'image principal*/
+  display: block;
+  margin: auto;
+  border: 5px solid #fff;
+  object-fit: cover;
+}
+
+@media (max-width: 650px) {
+  .image--gallery {
+    width: 90%;  /* Largeur de l'image principal*/
+    margin:auto;
+  }
+}
+
+  @media (max-width: 530px) {
+    .image--gallery {
+      width: 100%;  /* Largeur de l'image principal*/
+      margin:auto;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .image--gallery {
+      width: 100%;  /* Largeur de l'image principal*/
+      margin:auto;
+    }
+  }
+
+
+.image--selection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 430px) {
+  .image--selection {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));*/
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+.image__item {
+  width: 100%;/* Largeur des photos de la galery*/
+  height: 10rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  border: 5px solid #fff;
+  object-fit: cover;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 20%;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.animate-entrance {
+  animation: BounceIn 0.8s;
+}
+
+@keyframes BounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/******************************** Text Flex         ***********************************/
+
+.flex-container{
+  flex-direction:row;/*Alligner les 3 éléments du flex*/
+  color:#000000;
+  
+ 
+  
+}
+
+.nomPersonne{
+background-color:#ffb900 ;
+padding:10px;
+width:60%;
+}
+
+   .element01{
+   margin:1%;
+   padding:1%;
+   margin-top:1px;
+  /* border:1px solid #000000;*/
+   color:#000000;
+   height:50em ;
+   width:36%;
+   /*box-shadow: 5px 2px 2px #000000;*/
+  } 
+
+/*
+  .element01{
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+
+  }
+*/
+
+
+
+
+
+
+
+
+
+
+.container-gallery_photo{
+
+  margin-top: 8%;
+  margin-bottom:70%;/*marge avec le menu*/
+
+}

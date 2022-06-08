@@ -1,0 +1,469 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #fff;
+  color: #000; 
+}
+
+.flex-container {
+  display: flex;
+  width: auto;
+  align-items: center;
+  /*justify-content: center;*/
+  flex-direction: column;
+}
+
+/********************  header  **************************/
+/*Bandeau haut du site*/
+.bandeau_top{ 
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+   }
+
+
+
+
+
+/*flex*/
+
+   .conteneur-flexible{
+    display: flex;
+    font-size: 20px;
+    background-color: #0AD; /*Bleu*/
+    border: 2px solid blue;
+    box-sizing: border-box;
+    margin: 10px 0px;
+}
+.ligne{
+    flex-flow: row wrap;
+}
+.centre{
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+/******************  Logo site************************/
+.Logo_MySoftware{
+  
+
+}
+
+/*Pour tous les types d'écrans, si la largeur de la fenêtre ne dépasse pas... px,
+alors exécuter les règles CSS suivantes*/
+@media all and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.flex-container-header {
+  display: flex;
+  /*width: auto;*/
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+@media all and (max-width: 600px) {
+  .flex-container-header {
+    display: flex;
+    /*width: auto;*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+
+@media all and (max-width: 1050px) {
+  .picture img {
+
+    height: 90%;
+    width: 90%;
+  }
+}
+
+p {
+  color: #ffffff;
+  background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+  /*margin-left: 16%;
+  margin-right: 16%;*/
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: 3px #ffffff double;
+  padding: 2%;
+}
+.text_pages{
+  margin-top: 8%;
+  margin-bottom:2%;
+  margin: 0 auto;
+    
+  width:80%;
+  
+}
+
+@media screen and (max-width: 1330px) {
+  .text_pages {
+    width:100%;
+     }   
+}
+
+
+/******************** Image home page    ****************************************/
+.security_home_01 img{
+  margin:auto;
+  padding-bottom:4%;
+  width:80%;
+  
+ }
+
+ @media screen and  (max-width: 1330px) {
+  .security_home_01 img {
+    width:100%;
+     }   
+}
+
+
+
+
+
+
+
+
+/********************** Titre page     *************************/
+.TitrePage{
+position:center;
+color:#000000;
+margin-top:2%;
+}
+
+/******************************* Page press   **************/
+.articlePresse img{
+  box-shadow: 6px 9px 3px #000;
+}
+
+.articlePresse_cadre img{
+  background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+
+/*flex box*/
+.articlePresse{
+ display: flex;
+ justify-content: center;
+ margin-top:8%;
+}
+/******************************* Page Mentions légales  **************/
+.mentionLegales{
+  margin-top: 8%;
+  margin-bottom:40% ;
+}
+/******************************* Page Condition d'utilisation  **************/
+.conditionUtilisation{
+  margin-top: 8%;
+  margin-bottom:40% ;
+}
+/******************************* Page Plan du Site  **************/
+.planDuSite{
+  margin-top: 8%;
+  margin-bottom:40% ;
+}
+
+/******************************* URL PHP  **************/
+.url_php{
+  float: left;
+  text-align:left;
+  height:50px;
+  margin-left: 1%;
+  color:#000000;
+  font-size: 1.0em;   
+}
+/********************  Orloge PHP     *********************/
+.orloge_php{
+  float: right;
+  /*text-align:left;*/
+  height:50px;
+  vertical-align:middle;
+  line-height: 50px;
+  margin-right: 2%;
+  color:#ffffff;
+  font-size: x-large;
+}
+
+@media screen and (min-width: 1px) and (max-width: 1330px) {
+  .orloge_php { 
+    position:center;
+    color:#000000;
+    padding-top:1%;
+   }   
+}
+
+/***************/
+.switch_url{
+  margin-left:50px;
+}
+
+
+/***********************************************************************************/
+              
+                          /************ MENU ************/
+
+/***********************************************************************************/
+#menu_acc, #menu_acc ul{
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align:center;
+  }
+  #menu_acc li{
+  display:inline-block;
+  position:relative;
+  border-radius:8px 8px 0 0;
+  }
+  #menu_acc ul li{
+  display:inherit;
+  border-radius:0;
+  }
+  #menu_acc ul li:hover{
+  border-radius:0;
+  }
+  #menu_acc ul li:last-child{
+  border-radius:0 0 8px 8px;
+  }
+  #menu_acc ul{
+  position:absolute;
+  z-index: 1000;
+  max-height:0;
+  left: 0;
+  right: 0;
+  overflow:hidden;
+  -moz-transition: .8s all .3s;
+  -webkit-transition: .8s all .3s;
+  transition: .8s all .3s;
+  }
+  #menu_acc li:hover ul{
+  max-height:15em;
+  }
+  /* background des liens menus */
+  #menu_acc li:first-child{
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+  background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+  background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+  }
+  #menu_acc li:nth-child(2){
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+  }
+  #menu_acc li:nth-child(3){
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+  }
+  #menu_acc li:nth-child(4){
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    }
+    #menu_acc li:nth-child(5){
+      background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+      background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+      background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+      }
+      #menu_acc li:last-child{
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+  }
+  /* background des liens sous menus */
+  #menu_acc li:first-child li{
+  background:#2A2333;
+  }
+  #menu_acc li:nth-child(2) li{
+  background:#333A40;
+  }
+  #menu_acc li:nth-child(3) li{
+  background:#9F391A;
+  }
+  #menu_acc li:last-child li{
+  background:#677F35;
+  }
+  /* background des liens menus et sous menus au survol */
+  #menu_acc li:first-child:hover, #menu_acc li:first-child li:hover{
+  background:#65537A;
+  }
+  #menu_acc li:nth-child(2):hover, #menu_acc li:nth-child(2) li:hover{
+  background:#729EBF;
+  }
+  #menu_acc li:nth-child(3):hover, #menu_acc li:nth-child(3) li:hover{
+  background:#F6AD1A;
+  }
+  #menu_acc li:nth-child(4):hover, #menu_acc li:nth-child(3) li:hover{
+    background:#862611;
+    }
+    #menu_acc li:nth-child(5):hover, #menu_acc li:nth-child(3) li:hover{
+      background:#118637;
+      }
+      #menu_acc li:last-child:hover, #menu_acc li:last-child li:hover{
+  background:#CFFF6A;
+  }
+  /* les a href */
+  #menu_acc a{
+  text-decoration:none;
+  display:block;
+  padding:8px 32px;
+  color:#fff;
+  font-family:arial;
+  }
+  #menu_acc ul a{
+  padding:8px 0;
+  }
+  #menu_acc li:hover li a{
+  color:#fff;
+  text-transform:inherit;
+  }
+  #menu_acc li:hover a, #menu_acc li li:hover a{
+  color:#000;
+  }
+
+
+/************************ Rendre invisible le menu principal et le menu secondaire  *******************************/
+
+  @media screen and (min-width: 1px) and (max-width: 1330px) {
+    .menu_invisible { display: none!important; }   
+  }
+
+
+  @media screen and  (min-width: 1330px) {
+    .menu_original_invisible { display: none!important; }   
+  }
+
+ 
+
+
+/********************** MENU ACCORDEON************************************/
+#menuaccordeon {
+  position: absolute;
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+  width: 380px;
+}
+#menuaccordeon ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+}
+#menuaccordeon li {
+   background-color:#729EBF; 
+   background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+   background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+   border-radius: 6px;
+   margin-bottom:2px;
+   box-shadow: 3px 3px 3px #999;
+   border:solid 1px #333A40
+}
+#menuaccordeon li li {
+   max-height:0;
+   overflow: hidden;
+   transition: all .5s;
+   border-radius:0;
+   background: #444;
+   box-shadow: none;
+   border:none;
+   margin:0
+}
+#menuaccordeon a {
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 0;
+  font-family: verdana;
+  font-size:1.2em
+}
+#menuaccordeon ul li a, #menuaccordeon li:hover li a {
+  font-size:1em
+}
+#menuaccordeon li:hover {
+   background: #729EBF
+}
+#menuaccordeon li li:hover {
+   background: #999;
+}
+#menuaccordeon ul li:last-child {
+   border-radius: 0 0 6px 6px;
+   border:none;
+}
+#menuaccordeon li:hover li {
+  max-height: 15em;
+}
+
+
+/**************************  Bouton humburger     **************************/
+
+.container_hamberger {
+  display: inline-block;
+  cursor: pointer;
+}
+/*Construction du bouton hamburgur*/
+.bar1, .bar2, .bar3 {
+  margin-left:1%;
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 5px 5px;
+  transition: 0.4s;
+}
+
+
+/*************************************   MENU FOOTER   ****************************************************/
+.href_footer {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu-footer {
+  position: absolute;
+  /*bottom: 0;*/
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 20%;
+  background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+  /*margin-top:50%;*/
+  margin:auto;
+}
+  /**************************************************************************************/
+
+  .menu-footer>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+ 
+  }
+
+

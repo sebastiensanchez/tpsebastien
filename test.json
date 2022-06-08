@@ -1,0 +1,52 @@
+
+
+
+
+   
+  
+
+  [
+    {
+      
+      "urls": {
+
+        "raw": "http://localhost:8686//TP/images/directeur.PNG",
+          "full": "http://localhost:8686//TP/images/directeur.PNG",
+          "regular": "http://localhost:8686//TP/images/directeur.PNG",
+          "small": "http://localhost:8686//TP/images/directeur.PNG",
+          "thumb": "http://localhost:8686//TP/images/directeur.PNG",
+          "small_s3": "http://localhost:8686//TP/images/directeur.PNG"
+          
+      }
+     
+    },
+
+    {
+      
+      "urls": {
+        "raw": "http://localhost:8686//TP/images/chef_de_projet.PNG",
+          "full": "http://localhost:8686//TP/images/chef_de_projet.PNG",
+          "regular": "http://localhost:8686//TP/images/chef_de_projet.PNG",
+          "small": "http://localhost:8686//TP/images/chef_de_projet.PNG",
+          "thumb": "http://localhost:8686//TP/images/chef_de_projet.PNG",
+          "small_s3": "http://localhost:8686//TP/images/chef_de_projet.PNG"
+      }
+
+      
+    },
+    {
+      
+      "urls": {
+          "raw": "http://localhost:8686//TP/images/commercial.PNG",
+          "full": "http://localhost:8686//TP/images/commercial.PNG",
+          "regular": "http://localhost:8686//TP/images/commercial.PNG",
+          "small": "http://localhost:8686//TP/images/commercial.PNG",
+          "thumb": "http://localhost:8686//TP/images/commercial.PNG",
+          "small_s3": "http://localhost:8686//TP/images/commercial.PNG"
+      }
+
+      
+    }
+  
+
+]
